@@ -1,0 +1,24 @@
+body{
+  @extend %messiri-400;
+  font-size: 24px;
+  line-height: 27px;
+  color: $accent;
+}
+
+.container{
+  max-width: 1245px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  &__title{
+    @extend %messiri-600;
+    font-size: 48px;
+    line-height: 75px;
+  }
+}

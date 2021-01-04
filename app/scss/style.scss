@@ -4,8 +4,181 @@
 @import 'global';
 
 
+.header{
+  padding: 40px 0;
+}
+
+ul.header-top__menu{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 17px 0 auto;
+  max-width: 870px;
+  font-size: 18px;
+  line-height: 28px;
+  transform: translateY(-25px);
+}
+
+.header-top__menu-link{
+  color: inherit;
+}
+
+.header-bottom{
+  &__img{
+    height: 320px;
+    object-fit: cover;
+    
+  }
+  &__inner{
+    padding: 200px 160px 220px 160px;
+    background-color: #EBDCB2;
+    max-width: 905px;
+    margin: 0 auto;
+    transform: translateY(-50px);
+  }
+  &__title{
+    font-size: 80px;
+    line-height: 125px;
+    font-weight: 400;
+    padding: 45px 35px;
+    text-align: center;
+    position: relative;
+    &::after,
+    &::before{
+      position: absolute;
+      content: "";
+      width: 585px;
+      height: 4px;
+      left: 0;
+      
+      background-color: $accent;
+    }
+    &::before{
+      top: 0;
+    }
+    &::after{
+      bottom: 0;
+    }
+  }
+}
+
+.drinks{
+  padding: 40px 0 70px;
+  &__items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+  }
+  &__item{
+    width: 290px;
+  }
+  &__item-img{
+    width: 290px;
+    height: 300px;
+    object-fit: cover;
+  }
+  &__item-price{
+    text-align: center;
+    padding: 15px 100px;
+  }
+  &__item-price--flat{
+    padding: 15px 85px;
+  }
+}
+
+.sandwich{
+  padding: 40px 0 220px;
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item-img{
+    width: 290px;
+    height: 300px;
+    object-fit: cover;
+  }
+  &__item{
+    text-align: center;
+    max-width: 290px;
+  }
+  &__item--bottom{
+    margin-top: 290px;
+  }
+  &__item-price{
+    padding: 15px 65px;
+  }
+  &__item-price--long{
+    padding: 15px 30px;
+  }
+}
+
+.sandwich__item + .sandwich__item{
+  margin-left: 20px;
+}
+
+.bakery{
+  padding: 40px 0 110px;
+  &__item-img{
+    width: 290px;
+    height: 300px;
+    object-fit: cover;
+  }
+  &__item-price{
+    padding: 15px 35px;
+  }
+}
+
+.busqits{
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__item{
+    text-align: center;
+    max-width: 290px;
+  }
+  &__item + .busqits__item{
+    margin-left: 20px;
+  }
+}
 
 
+.cake{
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    text-align: center;
+    max-width: 290px;
+  }
+}
+
+.nuts{
+  padding: 40px 0 85px;
+  &__inner-img{
+    width: 800px;
+    height: 800px;
+  }
+  &__inner{
+  display: flex;
+  justify-content: space-between;
+  }
+  &__inner-descr{
+    max-width: 385px;
+    padding: 145px 10px;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+  }
+  &__inner-price{
+    max-width: 236px;
+    display: block;
+    margin-top: 75px;
+    text-align: center;
+  }
+}
 
 
 

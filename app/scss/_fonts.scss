@@ -1,0 +1,19 @@
+@font-face{
+  font-family: "ElMessiri-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local('ElMessiri-Regular'),
+    url('../fonts/ElMessiri-Regular.woff2') format('woff2'),
+    url('../fonts/ElMessiri-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "ElMessiri-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: local('ElMessiri-SemiBold'),
+    url('../fonts/ElMessiri-SemiBold.woff2') format('woff2'),
+    url('../fonts/ElMessiri-SemiBold.woff') format('woff');
+  font-display: swap;
+}
