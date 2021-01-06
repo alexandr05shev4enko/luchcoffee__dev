@@ -10,10 +10,10 @@
 
 <body>
 
-  <section class="header">
+  <header class="header">
     <div class="container">
       <div class="header-top">
-        <img class="header-top__logo" src="images/logo.svg" alt="Логотип Луч Кофе">
+        <div class="header-top__logo"> </div>
         <ul class="header-top__menu">
           <li class="header-top__menu-item">
             <a class="header-top__menu-link" href="#drinks">Кофе и чай</a>
@@ -39,40 +39,40 @@
         </div>
       </div>
     </div>
-  </section>
+  </header>
 
   <section class="drinks" id="drinks">
     <div class="container">
       <div class="drinks__top section-top">
         <h3 class="drinks__title section-top__title">Кофе и чай</h3>
-        <img class="section__top-logo" src="images/logo2.svg" alt="Логотип">
+        <img class="section-top__logo" src="images/logo2.svg" alt="Логотип">
       </div>
       <div class="drinks__items">
         <div class="drinks__item">
           <img class="drinks__item-img" src="images/drinks/1.jpg" alt="Эспрессо">
           <p class="drinks__item-price">
-            Эспрессо
+            Эспрессо <br>
             30 грн
           </p>
         </div>
         <div class="drinks__item">
           <img class="drinks__item-img" src="images/drinks/2.jpg" alt="Допио">
           <p class="drinks__item-price">
-            Допио
+            Допио <br>
             35 грн
           </p>
         </div>
         <div class="drinks__item">
           <img class="drinks__item-img" src="images/drinks/3.jpg" alt="Капучино">
           <p class="drinks__item-price">
-            Капучино
+            Капучино  <br>
             40 грн
           </p>
         </div>
         <div class="drinks__item">
           <img class="drinks__item-img" src="images/drinks/4.jpg" alt="Латте">
           <p class="drinks__item-price">
-            Латте
+            Латте  <br>
             45 грн
           </p>
         </div>
@@ -86,21 +86,21 @@
         <div class="drinks__item">
           <img class="drinks__item-img" src="images/drinks/6.jpg" alt="Раф">
           <p class="drinks__item-price">
-            Раф
+            Раф <br>
             55 грн
           </p>
         </div>
         <div class="drinks__item">
           <img class="drinks__item-img" src="images/drinks/7.jpg" alt="Фильтр">
           <p class="drinks__item-price">
-            Фильтр
+            Фильтр <br>
             30 грн
           </p>
         </div>
         <div class="drinks__item">
           <img class="drinks__item-img" src="images/drinks/8.jpg" alt="Чай">
           <p class="drinks__item-price">
-            Чай
+            Чай <br>
             25 грн
           </p>
         </div>
@@ -112,34 +112,34 @@
     <div class="container">
       <div class="sandwich-top section-top">
         <h3 class="sandwich-top__title section-top__title">Сэндвичи</h3>
-        <img class="section__top-logo" src="images/logo2.svg" alt="Логотип">
+        <img class="section-top__logo" src="images/logo2.svg" alt="Логотип">
       </div>
       <div class="sandwich__items">
         <div class="sandwich__item">
           <img class="sandwich__item-img" src="images/sandwich/1.jpg" alt="Deep spicy chicken">
           <p class="sandwich__item-price sandwich__item-price--long">
-            Deep spicy chicken
+            Deep spicy chicken <br>
             75 грн
           </p>
         </div>
         <div class="sandwich__item sandwich__item--bottom">
           <img class="sandwich__item-img" src="images/sandwich/2.jpg" alt="Моцарелла">
           <p class="sandwich__item-price">
-            Моцарелла
+            Моцарелла <br>
             80 грн
           </p>
         </div>
-        <div class="sandwich__item">
+        <div class="sandwich__item sandwich__item--left">
           <img class="sandwich__item-img" src="images/sandwich/3.jpg" alt="Fresh chicken">
           <p class="sandwich__item-price">
-            Fresh chicken
+            Fresh chicken <br>
             70 грн
           </p>
         </div>
         <div class="sandwich__item sandwich__item--bottom">
           <img class="sandwich__item-img" src="images/sandwich/4.jpg" alt="Ветчина и сыр">
           <p class="sandwich__item-price">
-            Ветчина и сыр
+            Ветчина и сыр <br>
             70 грн
           </p>
         </div>
@@ -151,7 +151,7 @@
     <div class="container">
       <div class="bakery-top section-top">
         <h3 class="bakery-top__title section-top__title">Baker Street</h3>
-        <img class="section__top-logo" src="images/logo2.svg" alt="Логотип">
+        <img class="section-top__logo" src="images/logo2.svg" alt="Логотип">
       </div>
       <div class="bakery__inner">
 
@@ -217,20 +217,20 @@
     <div class="container">
       <div class="nuts-top section-top">
         <h3 class="nuts-top__title section-top__title">Орешки</h3>
-        <img class="section__top-logo" src="images/logo2.svg" alt="Логотип">
+        <img class="section-top__logo" src="images/logo2.svg" alt="Логотип">
       </div>
       <div class="nuts__inner">
+        <div class="nuts__inner-box">
         <img class="nuts__inner-img" src="images/bakery/nuts.jpg" alt="Орешки">
-        <div class="nuts__inner-text">
+        <span class="nuts__inner-price">
+          Орешки со сгущенкой
+          20 грн/шт
+        </span>
+      </div>
           <p class="nuts__inner-descr">
             Думаем, это одно из немногих блюд, которое не нуждается ни в какой рекламе. В качестве начинки - вареная
             сгущенка и грецкие орехи.
           </p>
-          <span class="nuts__inner-price">
-            Орешки со сгущенкой
-            20 грн/шт
-          </span>
-        </div>
       </div>
     </div>
   </section>
@@ -239,7 +239,7 @@
     <div class="container">
       <div class="contacts-top section-top">
         <h3 class="contacts-top__title section-top__title">Контакты</h3>
-        <img class="section__top-logo" src="images/logo2.svg" alt="Логотип">
+        <img class="section-top__logo" src="images/logo2.svg" alt="Логотип">
       </div>
     </div>
   </section>

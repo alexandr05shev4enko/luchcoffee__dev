@@ -1,0 +1,137 @@
+@media(max-width: 768px){
+  body{
+    font-size: 18px;
+  }
+  ul.header-top__menu{
+  }
+  .header-top__menu-item{
+    margin-left: 65px;
+  }
+  .header-bottom{
+    &__img{
+      height: 585px;
+    }
+    &__inner{
+      padding: 80px 117px;
+      max-width: 445px;
+      transform: translateY(-85%);
+    }
+    &__title{
+      font-size: 48px;
+      line-height: 75px;
+      padding: 0 20px;
+    }
+  }
+  .header-top__logo{
+    background-image: url('../images/logo-tablet.svg');
+    width: 165px;
+    height: 40px;
+    transform: translateY(-10px);
+  }
+  .section-top{
+    display: block;
+    margin-bottom: 0px;
+    &__title{
+      font-size: 36px;
+      line-height: 56px;
+    }
+    &__logo{
+      transform: translateY(-40px);
+    }
+  }
+  .drinks{
+    padding: 20px 0 50px;
+    &__items{
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: start;
+    }
+    &__item{
+      width: 215px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    &__item-price{
+      padding: 10px 50px;
+    }
+    &__item-img{
+      height: 220px;
+    }
+  }
+
+  .sandwich{
+    padding: 20px 0 50px;
+    &__items{
+      flex-wrap: wrap;
+      justify-content: start;
+    }
+    &__item{
+      max-width: 330px;
+    }
+    &__item-img{
+      width: 330px;
+      height: 200px;
+    }
+    &__item--left{
+      margin-left: 0 !important;
+    }
+    &__item--bottom{
+      margin-top: 210px;
+    }
+    &__item-price{
+      font-size: 18px;
+    }
+  }
+  .sandwich__item + .sandwich__item{
+    margin-left: auto;
+  }
+
+  .bakery{
+    padding: 20px 0 30px;
+    &__item-img{
+      width: 230px;
+      height: 220px;
+    }
+  }
+
+  .busqits{
+    &__items{
+      margin-bottom: 0;
+    }
+    &__item{
+      max-width: 230px;
+    }
+    &__item + .busqits__item{
+      margin-left: 20px;
+    }
+  }
+
+  .cake{
+    &__items{
+      flex-wrap: wrap;
+    }
+    &__item{
+      max-width: 230px;
+    }
+    &__item-img{
+      width: 230px;
+      height: 220px;
+    }
+  }
+  .nuts{
+    padding: 20px 0 50px;
+    &__inner-img{
+      width: 485px;
+      height: 485px;
+    }
+    &__inner-descr{
+      font-family: "ElMessiri-SemiBold", sans-serif;
+      font-weight: 600;
+      max-width: 280px;
+      padding: 65px 10px;
+      font-size: 24px;
+      line-height: 150%;
+    }
+  }
+}
