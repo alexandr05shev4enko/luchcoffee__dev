@@ -195,6 +195,100 @@ ul.header-top__menu{
   }
 }
 
+.contacts{
+  padding: 40px 0 120px;
+  font-size: 30px;
+  line-height: 47px;
+  @extend %messiri-600;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__connection{
+    background-image: url('../images/contact-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 130px 86px 65px 126px;
+    text-align: center;
+    height: 587px;
+  }
+  &__connection-title{
+    margin-bottom: 34px;
+    max-width: 395px;
+  }
+  &__connection-number{
+    margin-bottom: 77px;
+    max-width: 395px;
+  }
+  &__connection-address{
+    max-width: 395px;
+  }
+  &__connection-phone{
+    color: inherit;
+  }
+  &__links{
+    padding: 130px 134px 0 150px;
+  }
+  &__links-title{
+    margin-bottom: 35px;
+  }
+  &__links-social{
+    display: block;
+    padding-left: 95px;
+    position: relative;
+    color: inherit;
+    margin-bottom: 43px;
+    &::before{
+      position: absolute;
+      content: "";
+      left: 0;
+      top: -10px;
+      bottom: 0;
+      width: 70px;
+      height: 70px;
+    }
+  }
+  &__links-social--instagram::before{
+    background-image: url('../images/instagram.svg');
+  }
+  &__links-social--facebook::before{
+    background-image: url('../images/facebook.svg');
+  }
+}
+
+.footer{
+  background-color: #AF4425;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0 60px;
+  }
+  &__logo{
+    background-image: url('../images/logo.svg');
+    width: 405px;
+    height: 73px;
+  }
+  &__text{
+    transform: translateY(10px);
+  }
+}
+
+
+#toTop {
+  width:70px;
+  height: 70px;
+  background-image: url('../images/top-btn.png');
+  background-size: cover;
+  background-repeat: no-repeat;background-position: center center;
+  position:fixed;
+  bottom:10px; /* отступ кнопки от нижнего края страницы*/
+  right:10px;
+  cursor:pointer;
+  display:none;
+  z-index: 999;
+  }
 
 
 
