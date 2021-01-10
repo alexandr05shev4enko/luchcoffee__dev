@@ -2,10 +2,14 @@
   body{
     font-size: 18px;
   }
+  .container{
+    max-width: 678px;
+    padding: 0 5px;
+  }
   ul.header-top__menu{
   }
   .header-top__menu-item{
-    margin-left: 65px;
+    margin-left: 47px;
   }
   .header-bottom{
     &__img{
@@ -45,12 +49,15 @@
       display: flex;
       flex-wrap: wrap;
       align-content: flex-start;
-      justify-content: start;
+      justify-content: space-between;
     }
     &__item{
       width: 215px;
-      margin-right: 20px;
       margin-bottom: 20px;
+      &:last-child{
+        margin-left: 20px;
+        margin-right: auto;
+      }
     }
     &__item-price{
       padding: 10px 50px;
@@ -77,7 +84,7 @@
       margin-left: 0 !important;
     }
     &__item--bottom{
-      margin-top: 210px;
+      margin-top: 0;
     }
     &__item-price{
       font-size: 18px;
@@ -98,13 +105,14 @@
   .busqits{
     &__items{
       margin-bottom: 0;
+      justify-content: space-between;
     }
     &__item{
-      max-width: 230px;
+      max-width: 213px;
     }
-    &__item + .busqits__item{
-      margin-left: 20px;
-    }
+    // &__item + .busqits__item{
+    //   margin-left: 20px;
+    // }
   }
 
   .cake{
@@ -112,7 +120,7 @@
       flex-wrap: wrap;
     }
     &__item{
-      max-width: 230px;
+      max-width: 213px;
     }
     &__item-img{
       width: 230px;
@@ -129,9 +137,35 @@
       font-family: "ElMessiri-SemiBold", sans-serif;
       font-weight: 600;
       max-width: 280px;
-      padding: 65px 10px;
+      padding: 145px 5px;
       font-size: 24px;
       line-height: 150%;
     }
   }
+  
+  .contacts{
+    &__connection{
+      margin: 0 auto;
+    }
+    &__links{
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+  }
+
+  .footer{
+    &__logo{
+      background-image: url('../images/logo-tablet-footer.svg');
+      width: 206px;
+      height: 50px;
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media(max-width: 320px){
+  
 }
