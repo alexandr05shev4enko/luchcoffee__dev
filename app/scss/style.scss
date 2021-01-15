@@ -33,6 +33,14 @@ ul.header-top__menu{
   color: inherit;
 }
 
+.header-top__menu-btn{
+  display: none;
+}
+
+.header-top__menu-aside{
+  transform: translateY(-300%);
+}
+
 .header-bottom{
   &__img{
     width: 1215px;
