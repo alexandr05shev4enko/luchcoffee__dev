@@ -6,6 +6,9 @@
 
 .header{
   padding: 40px 0;
+  &__title-box{
+    display: none;
+  }
 }
 
 .header-top__logo{
@@ -125,7 +128,7 @@ ul.header-top__menu{
     max-width: 290px;
   }
   &__item--bottom{
-    margin-top: 290px;
+    margin-top: 300px;
   }
   &__item-price{
     padding: 15px 65px;
@@ -176,6 +179,9 @@ ul.header-top__menu{
     text-align: center;
     max-width: 290px;
   }
+  &__item-img{
+    object-fit: cover;
+  }
 }
 
 .nuts{
@@ -183,6 +189,7 @@ ul.header-top__menu{
   &__inner-img{
     width: 800px;
     height: 800px;
+    object-fit: cover;
   }
   &__inner{
   display: flex;
@@ -207,7 +214,7 @@ ul.header-top__menu{
   padding: 40px 0 120px;
   font-size: 30px;
   line-height: 47px;
-  @extend %messiri-600;
+  @extend %messiri-400;
   &__inner{
     display: flex;
     justify-content: space-between;
@@ -240,6 +247,7 @@ ul.header-top__menu{
   }
   &__links-title{
     margin-bottom: 35px;
+    @extend %messiri-600;
   }
   &__links-social{
     display: block;
@@ -255,6 +263,8 @@ ul.header-top__menu{
       bottom: 0;
       width: 70px;
       height: 70px;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
   &__links-social--instagram::before{

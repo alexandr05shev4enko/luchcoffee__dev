@@ -10,8 +10,13 @@ $(function () {
     $('body,html').animate({ scrollTop: top }, 1500);
   });
 
-  $(function () {
+  $(window).scroll(function() {
+    var top = $(document).scrollTop();
+    if (top < 300) $('.header-top').removeClass('header-top--active');
+    // else $('.header-top__menu').addClass('header-top__menu--active');
+  });
 
+  $(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() != 0) {
         $('#toTop').fadeIn();
@@ -23,6 +28,12 @@ $(function () {
       $('body,html').animate({ scrollTop: 0 }, 800);
     });
   });
+
+  $(".menu-btn").on("click", function(){
+    $(".header-top").toggleClass("header-top--active");
+  });
+  
+  
 
 
 });

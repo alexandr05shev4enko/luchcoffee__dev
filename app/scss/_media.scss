@@ -2,23 +2,75 @@
   .header-bottom__inner{
     padding: 130px 160px 130px 160px;
   }
+  .contacts{
+    &__links{
+      padding: 130px 100px 0 100px;
+    }
+  }
 }
 
 @media(max-width: 1260px){
   .header-top__menu-item {
     margin-left: 80px;
   }
-  
   .drinks__item{
     width: 250px;
   }
   .drinks__item-price{
     padding: 15px 60px;
   }
+  .sandwich{
+    &__item{
+      max-width: 250px;
+    }
+    &__item-price{
+      padding: 15px 40px;
+    }
+  }
+  .section-top{
+    display: block;
+    &__logo{
+      margin-right: 0;
+      margin-left: auto;
+      margin-top: -60px;
+    }
+  }
+  .cake{
+    &__item{
+      max-width: 250px;
+    }
+  }
+  .bakery{
+    &__item-price{
+      padding: 15px 20px;
+    }
+  }
+  .nuts{
+    &__inner-img{
+      width: 650px;
+      height: 650px;
+    }
+  }
+  .contacts{
+    &__links{
+      padding: 130px 80px 0 80px;
+    }
+  }
+  .footer{
+    &__logo{
+      background-image: url('../images/logo-tablet.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
 }
 
 @media(max-width: 1180px){
-  
+  .contacts{
+    &__links{
+      padding: 130px 50px 0 50px;
+    }
+  }
 }
 
 @media(max-width: 1100px){
@@ -46,9 +98,44 @@
       line-height: 56px;
     }
     &__logo{
-      transform: translateY(-40px);
       margin-right: 0;
       margin-left: auto;
+      margin-top: -50px;
+    }
+  }
+  .busqits{
+    &__item{
+      max-width: 250px;
+    }
+  }
+  .cake{
+    &__item{
+      max-width: 200px;
+    }
+  }
+  .bakery{
+    &__item-price{
+      padding: 10px 10px;
+    }
+  }
+  .nuts{
+    &__inner-img{
+      width: 600px;
+      height: 600px;
+    }
+  }
+  .contacts{
+    &__inner{
+      display: block;
+    }
+    &__connection{
+      max-width: 607px;
+      margin: 0 auto;
+    }
+    &__links{
+      max-width: 423px;
+      margin: 0 auto;
+      padding-top: 30px;
     }
   }
 }
@@ -70,6 +157,41 @@
   .drinks__items{
     justify-content: space-around;
   }
+  .sandwich{
+    &__item-price{
+      padding: 10px 25px;
+    }
+    &__item-img{
+      height: 250px;
+    }
+  }
+  .busqits{
+    &__item{
+      max-width: 200px;
+    }
+  }
+  .cake{
+    &__item{
+      max-width: 150px;
+    }
+  }
+  .bakery{
+    &__item-price{
+      padding: 10px 10px;
+    }
+    &__item-img{
+      height: 250px;
+    }
+  }
+  .nuts{
+    &__inner-img{
+      width: 500px;
+      height: 500px;
+    }
+    &__inner-descr{
+      padding: 80px 10px;
+    }
+  }
 }
 
 @media(max-width: 880px){
@@ -78,6 +200,22 @@
     width: 165px;
     height: 40px;
     transform: translateY(-10px);
+  }
+  .section-top{
+    &__logo{
+      margin-top: -40px;
+    }
+  }
+  .nuts{
+    &__inner-img{
+      width: 400px;
+      height: 400px;
+    }
+    &__inner-descr{
+      padding: 60px 10px;
+      font-size: 30px;
+      line-height: 46px;
+    }
   }
 }
 
@@ -206,8 +344,8 @@
       height: 485px;
     }
     &__inner-descr{
-      font-family: "ElMessiri-SemiBold", sans-serif;
-      font-weight: 600;
+      font-family: "ElMessiri-Regular", sans-serif;
+      font-weight: 400;
       max-width: 280px;
       padding: 145px 5px;
       font-size: 24px;
@@ -252,15 +390,258 @@
       padding: 5px 25px;
     }
   }
+  .section-top{
+    &__logo{
+      margin-top: -25px;
+      margin-bottom: 15px;
+    }
+  }
+  .busqits{
+    &__item{
+      max-width: 180px;
+    }
+  }
+  .cake{
+    &__item{
+      max-width: 180px;
+    }
+  }
+  .bakery{
+    &__item{
+      
+    }
+    &__item-price{
+      
+    }
+    &__item-img{
+      
+    }
+  }
+  .nuts{
+    &__inner-img{
+      width: 400px;
+      height: 400px;
+    }
+    &__inner-descr{
+      padding: 90px 5px;
+      font-size: 20px;
+    }
+  }
+  .contacts{
+    font-size: 20px;
+    line-height: 30px;
+    &__connection{
+      background-size: contain;
+      max-width: 500px;
+      margin: 0 auto;
+      height: 485px;
+    }
+    &__links{
+      max-width: 423px;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+    &__links-social::before{
+      top: -22px;
+    }
+  }
+ 
 }
 
 @media(max-width: 570px){
+  .header{
+    padding-top: 0;
+    background-image: url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    &__title-box{
+      display: block;
+      padding: 60px 70px;
+      background-color: #EBDCB2;
+      position: absolute;
+      max-width: 450px;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 220px;
+    }
+    &__title{
+      font-size: 40px;
+      padding: 35px 20px;
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+    }
+  }
   .drinks{
     &__item{
       width: 140px;
     }
     &__item-img{
       height: 180px;
+    }
+  }
+  ul.header-top__menu{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    display: block;
+    background-color: #662E1C;
+    padding: 45px;
+    padding-top: 50px;
+    transform: translateY(-300%);
+    transition: all .5s;
+  }
+  .header-top--active ul.header-top__menu{
+    transform: translateY(0%);
+    z-index: 3;
+  }
+  .header-top__menu-item{
+    display: block;
+    padding: 20px 0;
+    margin-left: 0;
+  }
+  .menu-btn{
+    position: absolute;
+    display: block;
+    height: 12px;
+    width: 22px;
+    right: 25px;
+    z-index: 10;
+    margin-top: 30px;
+    cursor: pointer;
+    &__inner{
+      background-color: #000;
+      width: 22px;
+      height: 2px;
+      position: absolute;
+      top: 5px;
+      &::before{
+        position: absolute;
+        content: "";
+        width: 22px;
+        height: 2px;
+        background-color: #000;
+        top: -6px;
+        transition: all .3s;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        width: 22px;
+        height: 2px;
+        background-color: #000;
+        top: 6px;
+        transition: all .3s;
+      }
+    }
+  }
+  .header-top.header-top--active .menu-btn__inner{
+    height: 0;
+  }
+  .header-top.header-top--active .menu-btn__inner::before{
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .header-top.header-top--active .menu-btn__inner::after{
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .header-top{
+    &__logo{
+      position: absolute;
+      margin-top: 20px;
+      margin-left: 20px;
+      z-index: 10;
+    }
+    &__menu-link{
+      display: block;
+      width: 100%;
+    }
+    &__menu-item:hover{
+      background-color: #EBDCB2;
+    }
+  } 
+  .section-top__logo{
+    transform: translateY(-15px);
+  }
+  .header-bottom{
+    display: none;
+    // &__img{
+    //   display: none;
+    // }
+    // &__inner{
+    //   display: none;
+    // }
+  }
+  #toTop{
+    width: 40px;
+    height: 40px;
+  }
+  .section-top{
+    &__logo{
+      margin-top: -10px;
+    }
+  }
+  .busqits{
+    &__item{
+      max-width: 130px;
+    }
+  }
+  .cake{
+    &__item{
+      max-width: 130px;
+    }
+    &__item-img{
+      height: 160px;
+    }
+  }
+  .bakery{
+    &__item-img{
+      height: 160px;
+    }
+  }
+  .nuts{
+    &__inner-descr{
+      padding: 70px 5px;
+      font-size: 16px;
+      max-width: 200px;
+    }
+  }
+  .footer{
+    &__inner{
+      display: block;
+      margin: 0 auto;
+    }
+    &__logo{
+      margin: 0 auto;
+    }
+    &__text{
+      text-align: center;
+    }
+  }
+}
+
+@media(max-width: 500px){
+  .contacts{
+    &__connection{
+      max-width: 450px;
+      margin: 0 auto;
+      height: 455px;
+      padding: 95px 86px 65px 126px;
+    }
+    &__links{
+      max-width: 423px;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+    &__connection-number{
+      margin-bottom: 35px;
     }
   }
 }
@@ -272,6 +653,175 @@
     }
     &__item-price{
       padding: 5px 15px;
+    }
+  }
+  .header{
+    &__title-box{
+      display: block;
+      padding: 35px 50px;
+      background-color: #EBDCB2;
+      position: absolute;
+      max-width: 300px;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 140px;
+      
+    }
+    &__title{
+      font-size: 24px;
+      padding: 20px 10px;
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+    }
+  }
+  .busqits{
+    &__item{
+      max-width: 120px;
+    }
+  }
+  .cake{
+    &__item{
+      max-width: 120px;
+    }
+    &__item-img{
+      height: 150px;
+    }
+  }
+  .bakery{
+    &__item-img{
+      height: 150px;
+    }
+  }
+  .nuts{
+    &__inner{
+      display: block;
+    }
+    &__inner-box{
+      margin: 0 auto;
+    }
+    &__inner-img{
+      margin: 0 auto;
+    }
+    &__inner-descr{
+      margin: 0 auto;
+      padding: 20px 0;
+      max-width: 80%;
+      font-size: 24px;
+    }
+  }
+  .contacts{
+    &__connection{
+      height: 400px;
+      padding: 90px 60px 55px 80px;
+    }
+  }
+}
+
+@media(max-width: 400px){
+  .drinks{
+    &__item{
+      width: 100px;
+    }
+    &__item-price{
+      font-size: 15px;
+      line-height: 20px;
+      padding: 5px 10px;
+    }
+  }
+  .section-top{
+    &__title{
+      font-size: 22px;
+    }
+  }
+  .busqits{
+    &__item{
+      max-width: 100px;
+    }
+  }
+  .cake{
+    &__item{
+      max-width: 100px;
+    }
+    &__item-img{
+      height: 120px;
+    }
+  }
+  .bakery{
+    &__item-img{
+      height: 120px;
+    }
+    &__item-price{
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .contacts{
+    font-size: 16px;
+    line-height: 24px;
+    &__connection{
+      padding: 80px 71px 55px 97px;
+    }
+    &__connection-title{
+      margin-bottom: 10px;
+    }
+    &__connection-number{
+      margin-bottom: 15px;
+    }
+    &__links{
+      padding-top: 0;
+    }
+    &__links-social::before{
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+@media(max-width: 340px){
+  .drinks{
+    &__item{
+      width: 90px;
+    }
+  }
+  .section-top{
+    &__title{
+      font-size: 18px;
+    }
+  }
+  .busqits{
+    &__item{
+      max-width: 85px;
+    }
+  }
+  .cake{
+    &__item{
+      max-width: 85px;
+    }
+    &__item-img{
+      height: 100px;
+    }
+  }
+  .bakery{
+    &__item-img{
+      height: 100px;
+    }
+    &__item-price{
+      font-size: 11px;
+      line-height: 15px;
+    }
+  }
+  .nuts{
+    &__inner-descr{
+      font-size: 18px;
+    }
+  }
+  .contacts{
+    &__connection{
+      height: 325px;
+      padding: 70px 65px 45px 75px;
     }
   }
 }
@@ -286,13 +836,17 @@
   .container{
     width: 270px;
   }
-  ul.header-top__menu{
-    display: none;
-  }
+  
   .header-top__logo{
     background-image: url('../images/logo-mobile.svg');
     width: 270px;
     height: 44px;
+    margin-left: 0;
+  }
+  .menu-btn{
+    margin-top: 70px;
+    right: auto;
+    left: 25px;
   }
   .header-bottom__img{
     display: none;
@@ -307,18 +861,23 @@
     line-height: 38px;
     padding: 20px 3px;
   }
-  .menu-btn{
-    display: block;
-    width: 22px;
-    height: 12px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: -20px;
-    &__inner{
-      background-color: #000;
-      width: 22px;
-      height: 2px;
+  .drinks{
+    &__item{
+      width: 80px;
+    }
+    &__item-img{
+      height: 95px;
+    }
+    &__item-price{
+      font-size: 11px;
+    }
+  }
+  .contacts{
+    font-size: 14px;
+    line-height: 22px;
+    &__connection{
+      height: 250px;
+      padding: 35px 40px 30px 40px;
     }
   }
 }
